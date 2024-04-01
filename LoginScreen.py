@@ -1,4 +1,6 @@
 import flet as ft 
+from flet import TextField, Checkbox, ElevatedButton, Text, Row, Column
+from flet_core.control_event import ControlEvent
 
 def main(page: ft.Page) -> None: 
     page.title = "Signup"
@@ -14,7 +16,7 @@ def main(page: ft.Page) -> None:
     checkbox_sign: Checkbox = Checkbox(label='i agree to stuff', value=False)
     button_submit: ElevatedButton = ElevatedButton(text='Sign Up', width=200, disabled=True)
 
-    def validate(e: ControlEvent0) -> None: 
+    def validate(e: ControlEvent) -> None: 
         if all([text_username.value, text_password.value, checkbox_sign.value]):
             button_submit.disabled = False
         else: 
