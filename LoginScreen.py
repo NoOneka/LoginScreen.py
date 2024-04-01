@@ -49,9 +49,13 @@ def main(page: ft.Page) -> None:
                      checkbox_sign,
                      button_submit]
                 )
-            ]
+            ],
+            alignment=ft.MainAxisAlignment.CENTER
+
         )
     )
+if __name__=="_main__":
+    ft.app(target=main)
 
 
 
