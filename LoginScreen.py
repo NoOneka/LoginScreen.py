@@ -6,8 +6,8 @@ def main(page: ft.Page) -> None:
     page.title = "Signup"
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.theme_mode = ft.ThemeMode.LIGHT
-    page.window.width = 400
-    page.window.height= 400
+    page.window_width = 400
+    page.window_height= 400
     page.window_resizable = False
 
     #Setup our Fields 
@@ -56,7 +56,7 @@ def main(page: ft.Page) -> None:
 
         )
     )
-if __name__=="_main__":
+if __name__=="__main__":
     ft.app(target=main)
 
 
